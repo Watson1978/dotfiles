@@ -1,0 +1,14 @@
+.bundle
+.tags
+*.bak
+*.rej
+.DS_Store
+*.o
+*.elc
+.idea/
+xcuserdata
+GPATH
+GRTAGS
+GTAGS
+GSYMS
+TAGS

@@ -1,0 +1,62 @@
+[user]
+	name = Watson
+	email = watson1978@gmail.com
+	signingkey = DAE12766
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+	fscache = true
+	preloadindex = true
+	editor = emacs
+[help]
+	autocorrect = 1
+[color]
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	l = log --stat --pretty=format:'%Cblue%h %Cgreen%ar %Cred%an %Creset%s %Cred%d'
+	short = log --pretty=format:\"%h - %an, %ar : %s\"
+	tree = log --oneline --decorate --graph
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[branch]
+	autosetuprebase = always
+[merge]
+	keepBackup = false;
+	tool = Kaleidoscope
+[push]
+	default = current
+[pull]
+	rebase = true
+[mergetool]
+	keepBackup = true
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	renames = copies
+	tool = Kaleidoscope
+	compactionHeuristic = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[commit]
+	gpgsign = false
+	template = /Users/watson/.stCommitMsg
+[gpg]
+	program = /usr/local/bin/gpg2
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
