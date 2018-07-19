@@ -8,8 +8,11 @@ brew install rcm
 env RCRC=$HOME/dotfiles/rcrc rcup
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ ! -d ~/.oh-my-zsh ]; then
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 # anyframe
-git clone git@github.com:mollifier/anyframe.git ~/.zsh/anyframe
-
+if [ ! -d ~/.zsh/anyframe ]; then
+	git clone git@github.com:mollifier/anyframe.git ~/.zsh/anyframe
+fi
