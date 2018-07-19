@@ -78,7 +78,7 @@ function peco-cdr () {
     zle clear-screen
 }
 zle -N peco-cdr
-bindkey '^t' peco-cdr # bind to F1 (https://github.com/vmalloc/zsh-config/blob/master/extras/function_keys.zsh)
+bindkey '^t' peco-cdr
 
 
 function peco-open-gem() {
