@@ -20,5 +20,5 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
 Install the dotfiles:
 
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    ./setup.sh
 
