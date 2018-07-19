@@ -3,6 +3,36 @@
 brew install git
 brew install peco
 brew install chisel
+brew install the_silver_searcher
+brew install tree
+brew install tig
+brew install mas
+
+brew tap caskroom/cask
+brew cask install slack
+brew cask install appcleaner
+brew cask install iterm2
+brew cask install istat-menus
+brew cask install gitup
+brew cask install the-unarchiver
+brew cask install dash
+brew cask install tower
+brew cask install sublime-text
+
+# quicklook
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install quicklook-json
+brew cask install qlprettypatch
+brew cask install quicklook-csv
+brew cask install provisionql
+
+# Mac App Store
+mas install 587512244 # Kaleidoscope
+mas install 1024640650 # CotEditor
+mas install 419330170 # Moom
+mas install 445189367 # PopClip
+mas install 425955336 # Skitch
 
 brew tap thoughtbot/formulae
 brew install rcm
