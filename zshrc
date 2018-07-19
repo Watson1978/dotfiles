@@ -83,20 +83,20 @@ bindkey '^t' peco-cdr # bind to F1 (https://github.com/vmalloc/zsh-config/blob/m
 function peco-open-gem() {
     local gem_name=$(bundle list | sed -e 's/^ *\* *//g' | peco | cut -d \  -f 1)
     if [ -n "$gem_name" ]; then
-	local gem_dir=$(bundle show ${gem_name})
-	subl ${gem_dir}
+        local gem_dir=$(bundle show ${gem_name})
+        subl ${gem_dir}
     fi
 }
 
 function peco-rake() {
     local task=$(rake -T | peco | cut -d " " -f 2);
     if [ -n "$task" ]; then
-	rake $task
+        rake $task
     fi
 }
 
 function e {
-	local args
-	args=`echo $1 | sed -E "s/([^:]+):([0-9:]+)/+\2 \1/g"`
-	eval "/usr/local/bin/emacsclient -n $args"
+    local args
+    args=`echo $1 | sed -E "s/([^:]+):([0-9:]+)/+\2 \1/g"`
+    eval "/usr/local/bin/emacsclient -n $args"
 }
