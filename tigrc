@@ -1,0 +1,8 @@
+set main-view = id:width=12 date author commit-title:graph=yes,refs=yes
+# 水平分割したウィンドウの下画面サイズを % で指定（行数指定も可）
+set split-view-height = 80%
+# 差分の前後の表示行数（diff-context)を指定 
+set diff-context = 6
+
+bind main    R !git rebase -i %(commit)
+bind diff    R !git rebase -i %(commit)
