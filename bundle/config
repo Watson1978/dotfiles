@@ -1,0 +1,5 @@
+---
+BUNDLE_JOBS: '8'
+BUNDLE_GEM__TEST: false
+BUNDLE_GEM__MIT: false
+BUNDLE_GEM__COC: false
