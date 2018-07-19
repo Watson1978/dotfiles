@@ -1,5 +1,6 @@
 #/bin/bash
 
+brew install git
 brew install peco
 
 brew tap thoughtbot/formulae
@@ -15,4 +16,11 @@ fi
 # anyframe
 if [ ! -d ~/.zsh/anyframe ]; then
 	git clone git@github.com:mollifier/anyframe.git ~/.zsh/anyframe
+fi
+
+# rbenv
+if [ ! -d ~/.rbenv ]; then
+	git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+	git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+	git clone https://github.com/rkh/rbenv-update.git "$(rbenv root)"/plugins/rbenv-update
 fi
