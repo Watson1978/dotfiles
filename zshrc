@@ -50,6 +50,7 @@ fpath=($HOME/.zsh/anyframe(N-/) $fpath)
 autoload -Uz anyframe-init
 anyframe-init
 
+bindkey '^t' anyframe-widget-cdr
 bindkey '^xb' anyframe-widget-cdr
 bindkey '^x^b' anyframe-widget-checkout-git-branch
 
@@ -68,18 +69,6 @@ bindkey '^x^i' anyframe-widget-insert-git-branch
 
 bindkey '^xf' anyframe-widget-insert-filename
 bindkey '^x^f' anyframe-widget-insert-filename
-
-function peco-cdr () {
-    local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
-    if [ -n "$selected_dir" ]; then
-        BUFFER="cd ${selected_dir}"
-        zle accept-line
-    fi
-    zle clear-screen
-}
-zle -N peco-cdr
-bindkey '^t' peco-cdr
-
 
 function peco-open-gem() {
     local gem_name=$(bundle list | sed -e 's/^ *\* *//g' | peco | cut -d \  -f 1)
