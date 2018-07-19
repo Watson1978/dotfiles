@@ -2,6 +2,7 @@
 
 brew install git
 brew install peco
+brew install chisel
 
 brew tap thoughtbot/formulae
 brew install rcm
