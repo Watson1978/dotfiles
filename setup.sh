@@ -3,6 +3,7 @@
 brew install git
 brew install peco
 brew install chisel
+brew install grep
 brew install the_silver_searcher
 brew install tree
 brew install tig
