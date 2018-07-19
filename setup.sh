@@ -7,6 +7,7 @@ brew install grep
 brew install the_silver_searcher
 brew install tree
 brew install tig
+brew install ccat
 brew install mas
 
 brew tap caskroom/cask
