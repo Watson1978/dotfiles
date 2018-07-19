@@ -25,3 +25,8 @@ if [ ! -d ~/.rbenv ]; then
 	git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 	git clone https://github.com/rkh/rbenv-update.git "$(rbenv root)"/plugins/rbenv-update
 fi
+
+# pyenv
+if [ ! -d ~/.pyenv ]; then
+	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+fi
