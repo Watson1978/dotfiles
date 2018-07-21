@@ -29,7 +29,7 @@ man() {
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="eastwood"
 
-plugins=(git osx brew rbenv rails zsh-syntax-highlighting)
+plugins=(git osx brew rbenv zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit && compinit -u
