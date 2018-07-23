@@ -12,3 +12,6 @@ GRTAGS
 GTAGS
 GSYMS
 TAGS
+
+*.unc-backup~
+*.unc-backup.md5~
