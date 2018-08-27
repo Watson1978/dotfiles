@@ -4,14 +4,7 @@
 # PATH
 export PATH="$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# CUDA
-export CUDA_PATH="/usr/local/cuda"
-export CPATH="$CUDA_PATH/include:$CPATH"
-export LD_LIBRARY_PATH="$CUDA_PATH/lib64:$CUDA_PATH/lib:$LD_LIBRARY_PATH"
-export PATH="$CUDA_PATH/bin:$PATH"
-export LIBRARY_PATH="$CUDA_PATH/lib64:$CUDA_PATH/lib:$LIBRARY_PATH"
-
-# XXenv
+# XXenv 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
