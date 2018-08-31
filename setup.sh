@@ -28,6 +28,7 @@ brew cask install quicklook-json
 brew cask install qlprettypatch
 brew cask install quicklook-csv
 brew cask install provisionql
+brew cask install https://raw.githubusercontent.com/Watson1978/QLMarkdownGFM/master/qlmarkdown-gfm.rb
 
 # Mac App Store
 mas install 587512244 # Kaleidoscope
