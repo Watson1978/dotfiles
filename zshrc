@@ -29,6 +29,9 @@ man() {
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="eastwood"
 
+LANG=ja_JP.UTF-8
+LC_CTYPE="ja_JP.UTF-8"
+
 plugins=(git osx brew rbenv zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
