@@ -77,7 +77,7 @@ function peco-open-gem() {
     local gem_name=$(bundle list | sed -e 's/^ *\* *//g' | peco | cut -d \  -f 1)
     if [ -n "$gem_name" ]; then
         local gem_dir=$(bundle show ${gem_name})
-        subl ${gem_dir}
+        code ${gem_dir}
     fi
 }
 
