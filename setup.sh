@@ -37,11 +37,6 @@ mas install 419330170 # Moom
 mas install 445189367 # PopClip
 mas install 425955336 # Skitch
 
-brew tap thoughtbot/formulae
-brew install rcm
-
-env RCRC=$HOME/dotfiles/rcrc rcup
-
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -63,3 +58,8 @@ fi
 if [ ! -d ~/.pyenv ]; then
 	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 fi
+
+brew tap thoughtbot/formulae
+brew install rcm
+
+env RCRC=$HOME/dotfiles/rcrc rcup
