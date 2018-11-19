@@ -19,7 +19,7 @@ brew cask install gitup
 brew cask install the-unarchiver
 brew cask install dash
 brew cask install tower
-brew cask install sublime-text
+brew cask install visual-studio-code
 
 # quicklook
 brew cask install qlcolorcode
