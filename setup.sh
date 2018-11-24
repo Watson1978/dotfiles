@@ -20,6 +20,7 @@ brew cask install the-unarchiver
 brew cask install dash
 brew cask install tower
 brew cask install visual-studio-code
+brew cask install hyperswitch
 
 # quicklook
 brew cask install qlcolorcode
