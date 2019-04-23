@@ -32,7 +32,7 @@ ZSH_THEME="eastwood"
 LANG=ja_JP.UTF-8
 LC_CTYPE="ja_JP.UTF-8"
 
-plugins=(git osx brew rbenv zsh-syntax-highlighting)
+plugins=(git osx brew rbenv)
 source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit && compinit -u
