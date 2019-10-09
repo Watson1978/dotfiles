@@ -11,6 +11,8 @@ brew install ccat
 brew install mas
 
 brew tap caskroom/cask
+brew cask install 1password
+brew cask install alfred
 brew cask install slack
 brew cask install appcleaner
 brew cask install iterm2
