@@ -1,5 +1,9 @@
 #/bin/bash
 
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt update
+sudo apt install -y rcm
+
 sudo apt install -y git
 sudo apt install -y zsh
 sudo apt install -y build-essential
@@ -38,8 +42,5 @@ if [ ! -d ~/.pyenv ]; then
 	wget -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 fi
 
-sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
-sudo apt-get update
-sudo apt-get install rcm
 
 env RCRC=$HOME/dotfiles/rcrc rcup
