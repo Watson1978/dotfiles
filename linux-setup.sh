@@ -7,12 +7,12 @@ cp peco_linux_amd64/peco ~/bin
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git
 fi
 
 # anyframe
 if [ ! -d ~/.zsh/anyframe ]; then
-	git clone git@github.com:mollifier/anyframe.git ~/.zsh/anyframe
+	git clone --depth=1 https://github.com/mollifier/anyframe.git ~/.zsh/anyframe
 fi
 
 # rbenv

@@ -12,7 +12,6 @@ brew install openssl@1.1 # for rbenv
 brew install jemalloc
 brew install mas
 
-brew tap caskroom/cask
 brew cask install 1password
 brew cask install alfred
 brew cask install slack
@@ -44,12 +43,12 @@ mas install 425955336 # Skitch
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git
 fi
 
 # anyframe
 if [ ! -d ~/.zsh/anyframe ]; then
-	git clone git@github.com:mollifier/anyframe.git ~/.zsh/anyframe
+	git clone --depth=1 https://github.com/mollifier/anyframe.git ~/.zsh/anyframe
 fi
 
 # rbenv
