@@ -7,6 +7,7 @@ brew install grep
 brew install the_silver_searcher
 brew install tree
 brew install tig
+brew install axel
 brew install ccat
 brew install openssl@1.1 # for rbenv
 brew install jemalloc
