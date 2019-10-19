@@ -16,3 +16,4 @@ TAGS
 *.unc-backup~
 *.unc-backup.md5~
 .vscode
+*.code-workspace
