@@ -62,9 +62,9 @@ if [ ! -d ~/.rbenv ]; then
 fi
 
 # pyenv
-if [ ! -d ~/.pyenv ]; then
-	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-fi
+# if [ ! -d ~/.pyenv ]; then
+# 	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+# fi
 
 brew tap thoughtbot/formulae
 brew install rcm

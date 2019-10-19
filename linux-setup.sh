@@ -38,9 +38,9 @@ if [ ! -d ~/.rbenv ]; then
 fi
 
 # pyenv
-if [ ! -d ~/.pyenv ]; then
-	wget -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-fi
+# if [ ! -d ~/.pyenv ]; then
+# 	wget -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+# fi
 
 
 env RCRC=$HOME/dotfiles/rcrc rcup
