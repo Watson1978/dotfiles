@@ -18,7 +18,7 @@ cp peco_linux_amd64/peco ~/bin
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
-	git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git
+	git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
 # anyframe
