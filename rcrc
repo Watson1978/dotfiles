@@ -1,2 +1,2 @@
-EXCLUDES="README*.md LICENSE setup.sh"
+EXCLUDES="README*.md LICENSE *setup.sh peco_linux*"
 DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
