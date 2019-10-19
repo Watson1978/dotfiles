@@ -1,5 +1,16 @@
 #/bin/bash
 
+sudo apt install -y git
+sudo apt install -y zsh
+sudo apt install -y build-essential
+sudo apt install -y libssl-dev
+sudo apt install -y libyaml-dev
+sudo apt install -y libreadline6-dev
+sudo apt install -y zlib1g-dev
+sudo apt install -y libncurses5-dev
+sudo apt install -y libffi-dev
+sudo apt install -y libgdbm5 libgdbm-dev
+
 mkdir ~/bin
 wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
 tar xf peco_linux_amd64.tar.gz
@@ -24,7 +35,7 @@ fi
 
 # pyenv
 if [ ! -d ~/.pyenv ]; then
-	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+	wget -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 fi
 
 sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
