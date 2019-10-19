@@ -6,8 +6,8 @@ export PATH="$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr
 
 # XXenv 
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # 右プロンプトを自動的に消す
 setopt transient_rprompt
