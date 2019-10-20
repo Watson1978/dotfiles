@@ -25,6 +25,8 @@ brew cask install dash
 brew cask install tower
 brew cask install visual-studio-code
 brew cask install hyperswitch
+brew cask install jasper
+brew cask install docker
 
 # quicklook
 brew cask install qlcolorcode
