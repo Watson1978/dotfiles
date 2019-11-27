@@ -4,6 +4,9 @@
 # PATH
 export PATH="$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# Rails
+export DISABLE_SPRING=1
+
 # XXenv 
 eval "$(rbenv init -)"
 #eval "$(pyenv init -)"
