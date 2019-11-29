@@ -1,8 +1,9 @@
 #/bin/bash
 
-sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
-sudo apt update
-sudo apt install -y rcm
+wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
+echo "deb https://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
+sudo apt-get update
+sudo apt-get install -y rcm
 
 sudo apt install -y git
 sudo apt install -y zsh
