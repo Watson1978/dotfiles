@@ -6,7 +6,7 @@ fi
 
 brew install git
 brew install peco
-brew install chisel
+brew install htop
 brew install grep
 brew install the_silver_searcher
 brew install tree
