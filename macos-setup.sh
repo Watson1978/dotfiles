@@ -14,6 +14,9 @@ brew install tig
 brew install axel
 brew install ccat
 brew install openssl@1.1 # for rbenv
+brew install gdbm
+brew install gmp
+brew install libffi
 brew install jemalloc
 brew install mas
 
