@@ -34,8 +34,8 @@ fi
 # rbenv
 if [ ! -d ~/.rbenv ]; then
 	git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-	git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-	git clone https://github.com/rkh/rbenv-update.git "$(rbenv root)"/plugins/rbenv-update
+	git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+	git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
 fi
 
 # pyenv
