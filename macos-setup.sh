@@ -19,6 +19,7 @@ brew install gmp
 brew install libffi
 brew install jemalloc
 brew install mas
+brew install envchain
 
 brew cask install 1password
 brew cask install alfred
