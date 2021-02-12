@@ -1,4 +1,4 @@
-alias ag="ag --literal --color --number"
+alias rg="rg --line-number"
 alias grep="ggrep --color=auto --line-number"
 alias be="bundle exec"
 alias ls="ls -F -G -w"

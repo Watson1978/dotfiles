@@ -8,7 +8,7 @@ brew install git
 brew install peco
 brew install htop
 brew install grep
-brew install the_silver_searcher
+brew install ripgrep
 brew install tree
 brew install tig
 brew install axel
