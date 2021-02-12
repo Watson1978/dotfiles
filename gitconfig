@@ -8,6 +8,7 @@
 	attributesfile = ~/.gitattributes
 	fscache = true
 	preloadindex = true
+	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 	editor = emacs
 [help]
 	autocorrect = 1

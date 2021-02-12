@@ -5,6 +5,7 @@ if !(type "brew" > /dev/null 2>&1); then
 fi
 
 brew install git
+brew install git-delta
 brew install peco
 brew install htop
 brew install grep
