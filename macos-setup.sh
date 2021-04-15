@@ -22,32 +22,32 @@ brew install jemalloc
 brew install mas
 brew install envchain
 
-brew cask install 1password
-brew cask install alfred
-brew cask install slack
-brew cask install appcleaner
-brew cask install iterm2
-brew cask install istat-menus
-brew cask install gitup
-brew cask install the-unarchiver
-brew cask install dash
-brew cask install tower
-brew cask install visual-studio-code
-brew cask install hyperswitch
-brew cask install jasper
-brew cask install docker
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask slack
+brew install --cask appcleaner
+brew install --cask iterm2
+brew install --cask istat-menus
+brew install --cask gitup
+brew install --cask the-unarchiver
+brew install --cask dash
+brew install --cask tower
+brew install --cask visual-studio-code
+brew install --cask hyperswitch
+brew install --cask jasper
+brew install --cask docker
 
 brew tap homebrew/cask-fonts
-brew cask install font-hackgen
+brew install --cask font-hackgen
 
 # quicklook
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install quicklook-json
-brew cask install qlprettypatch
-brew cask install quicklook-csv
-brew cask install provisionql
-brew cask install https://raw.githubusercontent.com/Watson1978/QLMarkdownGFM/master/qlmarkdown-gfm.rb
+brew install --cask qlcolorcode
+brew install --cask qlstephen
+brew install --cask quicklook-json
+brew install --cask qlprettypatch
+brew install --cask quicklook-csv
+brew install --cask provisionql
+brew install --cask https://raw.githubusercontent.com/Watson1978/QLMarkdownGFM/master/qlmarkdown-gfm.rb
 
 # Mac App Store
 mas install 587512244 # Kaleidoscope
