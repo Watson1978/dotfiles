@@ -22,6 +22,7 @@ brew install jemalloc
 brew install mas
 brew install envchain
 
+brew install --cask xcodes
 brew install --cask 1password
 brew install --cask alfred
 brew install --cask slack
