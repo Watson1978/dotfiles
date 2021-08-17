@@ -1,7 +1,7 @@
 [user]
 	name = Watson
 	email = watson1978@gmail.com
-	signingkey = DAE12766
+	signingkey = CC22918FF55259E58AE512089F5412D9A772C03F
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
@@ -51,13 +51,6 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [commit]
-	gpgsign = false
-	template = /Users/watson/.stCommitMsg
+	gpgsign = true
 [gpg]
-	program = /usr/local/bin/gpg2
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	program = /usr/local/MacGPG2/bin/gpg2
