@@ -15,9 +15,6 @@ eval "$(rbenv init -)"
 # 右プロンプトを自動的に消す
 setopt transient_rprompt
 
-# ssh
-ssh-add -K
-
 # man をカラフルに表示
 man() {
     env \
