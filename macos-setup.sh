@@ -23,6 +23,8 @@ brew install libffi
 brew install jemalloc
 brew install mas
 brew install envchain
+brew install ghq
+brew install direnv
 
 brew install --cask xcodes
 brew install --cask 1password

@@ -4,8 +4,7 @@
 # PATH
 export PATH="/opt/homebrew/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Rails
-export DISABLE_SPRING=1
+eval "$(direnv hook zsh)"
 
 # XXenv 
 eval "$(rbenv init -)"
