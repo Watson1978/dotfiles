@@ -2,7 +2,7 @@
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # PATH
-export PATH="$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Rails
 export DISABLE_SPRING=1
