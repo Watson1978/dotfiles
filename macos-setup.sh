@@ -41,6 +41,7 @@ brew install --cask visual-studio-code
 brew install --cask hyperswitch
 brew install --cask jasper
 brew install --cask docker
+brew install --cask alt-tab
 
 brew tap homebrew/cask-fonts
 brew install --cask font-hackgen
