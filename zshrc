@@ -2,30 +2,29 @@
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # PATH
-export PATH="/opt/homebrew/bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/.pyenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.nodenv/bin:$HOME/.nodenv/shims:$PATH"
 
 eval "$(direnv hook zsh)"
 
 # XXenv 
 eval "$(rbenv init -)"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+eval "$(nodenv init -)"
 
 # 右プロンプトを自動的に消す
 setopt transient_rprompt
 
 # man をカラフルに表示
 man() {
-    env \
-        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    env \        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
         LESS_TERMCAP_md=$(printf "\e[1;31m") \
         LESS_TERMCAP_me=$(printf "\e[0m") \
         LESS_TERMCAP_se=$(printf "\e[0m") \
         LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
         LESS_TERMCAP_ue=$(printf "\e[0m") \
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
-        man "$@"
-}
+        man "$@"}
 
 # oh-my-zsh の設定
 export ZSH=$HOME/.oh-my-zsh
