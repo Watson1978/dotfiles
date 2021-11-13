@@ -34,7 +34,7 @@ ZSH_THEME="eastwood"
 LANG=ja_JP.UTF-8
 LC_CTYPE="ja_JP.UTF-8"
 
-plugins=(git osx brew rbenv docker adb ripgrep)
+plugins=(git macos brew rbenv docker adb ripgrep)
 source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit && compinit -u
@@ -50,7 +50,6 @@ chpwd_functions+=chpwd_recent_dirs
 zstyle ":chpwd:*" recent-dirs-max 500
 zstyle ":chpwd:*" recent-dirs-default true
 zstyle ":completion:*" recent-dirs-insert always
-
 fpath=($HOME/.zsh/anyframe(N-/) $fpath)
 autoload -Uz anyframe-init
 anyframe-init
