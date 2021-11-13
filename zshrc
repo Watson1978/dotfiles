@@ -6,11 +6,11 @@ export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.nodenv/bin:$HOME/.nodenv/shims:$PATH"
 
-eval "$(direnv hook zsh)"
 
 # XXenv 
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+eval "$(direnv hook zsh)"
 
 # 右プロンプトを自動的に消す
 setopt transient_rprompt
