@@ -87,3 +87,7 @@ function peco-rake() {
         rake $task
     fi
 }
+
+function cg() {
+    cd $(ghq list -p | sort | peco)
+}
