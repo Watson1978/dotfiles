@@ -87,9 +87,3 @@ function peco-rake() {
         rake $task
     fi
 }
-
-function e {
-    local args
-    args=`echo $1 | sed -E "s/([^:]+):([0-9:]+)/+\2 \1/g"`
-    eval "/usr/local/bin/emacsclient -n $args"
-}
