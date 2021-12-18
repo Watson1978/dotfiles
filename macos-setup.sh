@@ -81,6 +81,13 @@ if [ ! -d ~/.rbenv ]; then
 	git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
 fi
 
+# nodenv
+if [ ! -d ~/.nodenv ]; then
+	git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+	git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
+	git clone https://github.com/nodenv/nodenv-update.git ~/.nodenv/plugins/nodenv-update
+fi
+
 # pyenv
 # if [ ! -d ~/.pyenv ]; then
 # 	curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash

@@ -15,11 +15,8 @@ sudo apt install -y zlib1g-dev
 sudo apt install -y libncurses5-dev
 sudo apt install -y libffi-dev
 sudo apt install -y libgdbm5 libgdbm-dev
-
-mkdir ~/bin
-wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
-tar xf peco_linux_amd64.tar.gz
-cp peco_linux_amd64/peco ~/bin
+sudo apt install -y libssl-dev zlib1g-dev
+sudo apt install -y peco
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
@@ -37,6 +34,14 @@ if [ ! -d ~/.rbenv ]; then
 	git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 	git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
 fi
+
+# nodenv
+if [ ! -d ~/.nodenv ]; then
+	git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+	git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
+	git clone https://github.com/nodenv/nodenv-update.git ~/.nodenv/plugins/nodenv-update
+fi
+
 
 # pyenv
 # if [ ! -d ~/.pyenv ]; then
