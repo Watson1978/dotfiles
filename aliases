@@ -1,5 +1,10 @@
 alias rg="rg --line-number"
-alias grep="ggrep --color=auto --line-number"
 alias be="bundle exec"
-alias ls="ls -F -G -w"
-alias cat="ccat"
+
+if [ "$(uname)" = 'Darwin' ]; then
+    alias grep="ggrep --color=auto --line-number"
+    alias ls="ls -F -G -w"
+    alias cat="ccat"
+elif [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ]; then
+    alias open="xdg-open"
+fi
