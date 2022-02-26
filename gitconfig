@@ -51,6 +51,10 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
+[ghq]
+	root = ~/src
+[init]
+	defaultBranch = main
