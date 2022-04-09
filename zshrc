@@ -2,12 +2,11 @@
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # PATH
-export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.nodenv/bin:$HOME/.nodenv/shims:$PATH"
 
-
-# XXenv 
+# XXenv
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 eval "$(direnv hook zsh)"
