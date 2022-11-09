@@ -6,5 +6,9 @@ if [ "$(uname)" = 'Darwin' ]; then
     alias ls="ls -F -G -w"
     alias cat="ccat"
 elif [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ]; then
+    alias ls='exa'
+    alias ll='exa -ahl --git'
+    alias tree='exa -T'
+    alias cat='bat -p'
     alias open="xdg-open"
 fi
