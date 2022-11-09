@@ -1,14 +1,12 @@
 alias rg="rg --line-number"
 alias be="bundle exec"
+alias ls='exa'
+alias ll='exa -ahl --git'
+alias tree='exa -T'
+alias cat='bat -p'
 
 if [ "$(uname)" = 'Darwin' ]; then
     alias grep="ggrep --color=auto --line-number"
-    alias ls="ls -F -G -w"
-    alias cat="ccat"
 elif [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ]; then
-    alias ls='exa'
-    alias ll='exa -ahl --git'
-    alias tree='exa -T'
-    alias cat='bat -p'
     alias open="xdg-open"
 fi
