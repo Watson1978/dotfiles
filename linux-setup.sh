@@ -39,6 +39,7 @@ if [ ! -d ~/.nodenv ]; then
 	git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 	git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 	git clone https://github.com/nodenv/nodenv-update.git ~/.nodenv/plugins/nodenv-update
+	git clone https://github.com/pine/nodenv-yarn-install.git ~/.nodenv/plugins/nodenv-yarn-install
 fi
 
 
