@@ -7,7 +7,6 @@ if !(type "brew" > /dev/null 2>&1); then
 fi
 
 brew install git
-brew install git-delta
 brew install peco
 brew install htop
 brew install grep
@@ -25,6 +24,11 @@ brew install mas
 brew install envchain
 brew install ghq
 brew install direnv
+brew install difftastic
+brew install exa
+brew install bat
+brew install fd
+brew install procs
 
 brew install --cask xcodes
 brew install --cask 1password

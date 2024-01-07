@@ -8,7 +8,6 @@
 	attributesfile = ~/.gitattributes
 	fscache = true
 	preloadindex = true
-	pager = delta
 	editor = emacs
 [help]
 	autocorrect = 1
@@ -41,17 +40,19 @@
 	prompt = false
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = difftastic
 [difftool]
 	prompt = false
-[diff]
-	renames = copies
-	tool = Kaleidoscope
-	compactionHeuristic = true
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [commit]
 	gpgsign = false
+[pager]
+	difftool = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [ghq]
