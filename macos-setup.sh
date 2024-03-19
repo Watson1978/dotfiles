@@ -46,18 +46,13 @@ brew install --cask docker
 brew install --cask alt-tab
 brew install --cask monitorcontrol
 
-brew tap Watson1978/formula
-brew install --cask watson1978/formula/qlmarkdowngfm
-
 brew tap homebrew/cask-fonts
 brew install --cask font-hackgen
 
 # quicklook
-brew install --cask qlcolorcode
-brew install --cask qlstephen
-brew install --cask quicklook-json
-brew install --cask quicklook-csv
-brew install --cask provisionql
+brew tap Watson1978/formula
+brew install --cask watson1978/formula/qlmarkdowngfm
+brew install --cask --no-quarantine syntax-highlight
 
 # Mac App Store
 mas install 1575557335 # Kaleidoscope 3
