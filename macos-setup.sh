@@ -14,11 +14,6 @@ brew install ripgrep
 brew install tree
 brew install tig
 brew install axel
-brew install openssl
-brew install gdbm
-brew install gmp
-brew install libffi
-brew install jemalloc
 brew install mas
 brew install envchain
 brew install ghq
@@ -28,6 +23,13 @@ brew install exa
 brew install bat
 brew install fd
 brew install procs
+
+brew install openssl
+brew install gdbm
+brew install gmp
+brew install libffi
+brew install libyaml
+brew install jemalloc
 
 brew install --cask xcodes
 brew install --cask 1password
