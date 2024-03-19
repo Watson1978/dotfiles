@@ -14,8 +14,7 @@ brew install ripgrep
 brew install tree
 brew install tig
 brew install axel
-brew install ccat
-brew install openssl@1.1 # for rbenv
+brew install openssl
 brew install gdbm
 brew install gmp
 brew install libffi
@@ -45,6 +44,10 @@ brew install --cask visual-studio-code
 brew install --cask jasper
 brew install --cask docker
 brew install --cask alt-tab
+brew install --cask monitorcontrol
+
+brew tap Watson1978/formula
+brew install --cask watson1978/formula/qlmarkdowngfm
 
 brew tap homebrew/cask-fonts
 brew install --cask font-hackgen
@@ -53,16 +56,13 @@ brew install --cask font-hackgen
 brew install --cask qlcolorcode
 brew install --cask qlstephen
 brew install --cask quicklook-json
-brew install --cask qlprettypatch
 brew install --cask quicklook-csv
 brew install --cask provisionql
-brew install --cask https://raw.githubusercontent.com/Watson1978/QLMarkdownGFM/master/qlmarkdown-gfm.rb
 
 # Mac App Store
 mas install 1575557335 # Kaleidoscope 3
 mas install 1024640650 # CotEditor
 mas install 419330170 # Moom
-mas install 445189367 # PopClip
 mas install 425955336 # Skitch
 mas install 1081413713 # GIF Brewery 3
 mas install 937984704 # Amphetamine

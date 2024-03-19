@@ -3,8 +3,13 @@
 
 # PATH
 export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-export PATH="$HOME/.nodenv/bin:$HOME/.nodenv/shims:$PATH"
+export PATH="$HOME/.nodenv/bin:$HOME/.rbenv/shims:$PATH"
+
+# export PKG_CONFIG_PATH="$HOME/imagemagick6.9/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="$HOME/imagemagick7.0/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="$HOME/imagemagick7.1/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # XXenv
 eval "$(rbenv init -)"
