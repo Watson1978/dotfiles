@@ -12,8 +12,8 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.nodenv/bin:$HOME/.rbenv/shims:$PATH"
-export CFLAGS="-L/opt/homebrew/lib -L/opt/homebrew/opt/jpeg-turbo/lib "
-export CPPFLAGS="-L/opt/homebrew/lib -L/opt/homebrew/opt/jpeg-turbo/lib "
+# export CFLAGS="-L/opt/homebrew/lib"
+# export CPPFLAGS="-L/opt/homebrew/lib"
 
 # export PKG_CONFIG_PATH="$HOME/imagemagick6.9/lib/pkgconfig:$PKG_CONFIG_PATH"
 # export PKG_CONFIG_PATH="$HOME/imagemagick7.0/lib/pkgconfig:$PKG_CONFIG_PATH"
