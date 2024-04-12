@@ -2,10 +2,18 @@
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # PATH
-export PATH="/opt/homebrew/bin:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+export PREFIX="/opt/homebrew";
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.nodenv/bin:$HOME/.rbenv/shims:$PATH"
+export CFLAGS="-L/opt/homebrew/lib -L/opt/homebrew/opt/jpeg-turbo/lib "
+export CPPFLAGS="-L/opt/homebrew/lib -L/opt/homebrew/opt/jpeg-turbo/lib "
 
 # export PKG_CONFIG_PATH="$HOME/imagemagick6.9/lib/pkgconfig:$PKG_CONFIG_PATH"
 # export PKG_CONFIG_PATH="$HOME/imagemagick7.0/lib/pkgconfig:$PKG_CONFIG_PATH"
