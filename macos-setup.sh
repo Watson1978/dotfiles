@@ -13,7 +13,7 @@ brew install grep
 brew install ripgrep
 brew install tree
 brew install tig
-brew install axel
+brew install aria2
 brew install mas
 brew install envchain
 brew install ghq
@@ -52,16 +52,12 @@ brew tap homebrew/cask-fonts
 brew install --cask font-hackgen
 
 # quicklook
-brew tap Watson1978/formula
-brew install --cask watson1978/formula/qlmarkdowngfm
-brew install --cask --no-quarantine syntax-highlight
+brew install --cask --no-quarantine syntax-highlight # https://github.com/sbarex/SourceCodeSyntaxHighlight
 
 # Mac App Store
 mas install 1575557335 # Kaleidoscope 3
 mas install 1024640650 # CotEditor
-mas install 419330170 # Moom
 mas install 425955336 # Skitch
-mas install 1081413713 # GIF Brewery 3
 mas install 937984704 # Amphetamine
 mas install 1380563956 # 辞書 by 物書堂
 
