@@ -45,7 +45,7 @@ ZSH_THEME="eastwood"
 LANG=ja_JP.UTF-8
 LC_CTYPE="ja_JP.UTF-8"
 
-plugins=(git macos brew rbenv docker adb ripgrep)
+plugins=(git rbenv zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit && compinit -u
