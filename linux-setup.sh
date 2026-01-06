@@ -19,12 +19,8 @@ sudo apt install -y peco
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
-	git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
-
-# anyframe
-if [ ! -d ~/.zsh/anyframe ]; then
-	git clone --depth=1 https://github.com/mollifier/anyframe.git ~/.zsh/anyframe
+	git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
 # rbenv

@@ -1,12 +1,19 @@
+alias cd="z"
 alias rg="rg --line-number"
 alias be="bundle exec"
-alias ls='exa'
+alias ls='exa --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
 alias ll='exa -ahl --git'
 alias tree='exa -T'
 alias cat='bat -p'
+alias lgit='lazygit'
+alias ldocker='lazydocker'
+alias zed='zeditor'
+alias kubectl='minikube kubectl --'
 
 if [ "$(uname)" = 'Darwin' ]; then
     alias grep="ggrep --color=auto --line-number"
 elif [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ]; then
     alias open="xdg-open"
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
 fi
