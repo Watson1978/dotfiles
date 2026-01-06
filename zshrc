@@ -11,7 +11,7 @@ export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-export PATH="$HOME/.nodenv/bin:$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.nodenv/bin:$HOME/.nodenv/shims:$PATH"
 # export CFLAGS="-L/opt/homebrew/lib"
 # export CPPFLAGS="-L/opt/homebrew/lib"
 
