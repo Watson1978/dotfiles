@@ -23,6 +23,9 @@ brew install exa
 brew install bat
 brew install fd
 brew install procs
+brew install fzf
+brew install zoxide
+brew install zellij
 
 brew install openssl
 brew install gdbm

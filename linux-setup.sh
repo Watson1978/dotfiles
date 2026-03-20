@@ -14,8 +14,9 @@ sudo apt install -y libreadline6-dev
 sudo apt install -y zlib1g-dev
 sudo apt install -y libncurses5-dev
 sudo apt install -y libffi-dev
-sudo apt install -y libgdbm5 libgdbm-dev
-sudo apt install -y peco
+sudo apt install -y libgdbm-dev
+sudo apt install -y fzf
+sudo apt install -y zoxide
 
 # oh-my-zsh
 if [ ! -d ~/.oh-my-zsh ]; then
