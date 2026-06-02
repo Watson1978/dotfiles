@@ -50,10 +50,8 @@ ZSH_THEME="eastwood"
 LANG=ja_JP.UTF-8
 LC_CTYPE="ja_JP.UTF-8"
 
-plugins=(git rbenv zsh-autosuggestions)
+plugins=(git rbenv zsh-autosuggestions copypath)
 source $ZSH/oh-my-zsh.sh
-
-autoload -Uz compinit && compinit -u
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
@@ -61,6 +59,8 @@ zstyle ':completion:*:descriptions' format '%BCompleting%b %U%d%u'
 
 typeset -ga chpwd_functions
 
+# gemコマンドの補完を、標準のファイル・ディレクトリ補完で上書きする
+compdef _files gem
 
 export BAT_THEME=Dracula
 
